@@ -216,19 +216,19 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # Build info
   script.Print("===============================================")
   script.Print(" ");
-  script.Print(" AlphaDroid Project");
+  script.Print(" SigmaDroid Project");
   script.Print(" based on crDroid Android");
   script.Print(" ");
   script.Print("===============================================")
-  buildid = target_info.GetBuildProp("ro.alpha.modversion")
+  buildid = target_info.GetBuildProp("ro.sigma.modversion")
   androidver = target_info.GetBuildProp("ro.build.version.release")
   buildidn = target_info.GetBuildProp("ro.build.id")
   buildday = target_info.GetBuildProp("ro.build.date")
   securep = target_info.GetBuildProp("ro.build.version.security_patch")
   device = target_info.GetBuildProp("ro.build.product")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
-  maintainer = target_info.GetBuildProp("ro.alpha.maintainer")
-  package = target_info.GetBuildProp("ro.alpha.build.package")
+  maintainer = target_info.GetBuildProp("ro.sigma.maintainer")
+  package = target_info.GetBuildProp("ro.sigma.build.package")
   script.Print("===============================================")
   script.Print(" ROM version      : %s"%(buildid))
   script.Print(" ROM package      : %s"%(package))
