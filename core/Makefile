@@ -3203,7 +3203,7 @@ endif
 systemimage-changelog:
 ifneq (1,$(USER_BUILD_NO_CHANGELOG))
 	@echo "Making changelog!"
-	vendor/lineage/tools/changelog.sh
+	vendor/lineage/build/tools/changelog.sh
 else
 	@echo "Skipping changelog!"
 endif
