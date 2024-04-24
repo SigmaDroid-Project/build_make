@@ -229,7 +229,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   device = target_info.GetBuildProp("ro.build.product")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
   maintainer = target_info.GetBuildProp("ro.sigma.maintainer")
-  package = target_info.GetBuildProp("ro.sigma.build.package")                               ");
+  package = target_info.GetBuildProp("ro.sigma.build.package")
   script.Print("===============================================")
   script.Print(" ROM version      : %s"%(buildid))
   script.Print(" ROM package      : %s"%(package))
