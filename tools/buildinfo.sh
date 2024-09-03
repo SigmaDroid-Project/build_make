@@ -52,6 +52,16 @@ echo "ro.build.product=$TARGET_DEVICE"
 
 echo "# Do not try to parse description or thumbprint"
 echo "ro.build.description?=$PRIVATE_BUILD_DESC"
+echo "# CTS attestion fingerprint description"
+echo "persist.sys.pihooks_BRAND=$PIHOOKS_BRAND"
+echo "persist.sys.pihooks_MODEL=$PIHOOKS_MODEL"
+echo "persist.sys.pihooks_MANUFACTURER=$PIHOOKS_MANUFACTURER"
+echo "persist.sys.pihooks_DEVICE=$PIHOOKS_DEVICE"
+echo "persist.sys.pihooks_PRODUCT=$PIHOOKS_PRODUCT"
+echo "persist.sys.pihooks_DEVICE_INITIAL_SDK_INT=$PIHOOKS_DEVICE_INITIAL_SDK_INT"
+echo "persist.sys.pihooks_FINGERPRINT=$PIHOOKS_FINGERPRINT"
+echo "persist.sys.pihooks_ID=$PIHOOKS_ID"
+echo "persist.sys.pihooks_SECURITY_PATCH=$PIHOOKS_SECURITY_PATCH"
 if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
