@@ -62,6 +62,8 @@ echo "persist.sys.pihooks_DEVICE_INITIAL_SDK_INT=$PIHOOKS_DEVICE_INITIAL_SDK_INT
 echo "persist.sys.pihooks_FINGERPRINT=$PIHOOKS_FINGERPRINT"
 echo "persist.sys.pihooks_ID=$PIHOOKS_ID"
 echo "persist.sys.pihooks_SECURITY_PATCH=$PIHOOKS_SECURITY_PATCH"
+echo "persist.sys.pihooks_mainline_FINGERPRINT=$PIHOOKS_MAINLINE_FINGERPRINT"
+echo "persist.sys.pihooks_mainline_MODEL=$PIHOOKS_MAINLINE_MODEL"
 if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
